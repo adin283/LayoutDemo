@@ -233,6 +233,7 @@ class HelpHistoryCell: UITableViewCell {
             self.statusContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Left)
             self.statusContainerView.autoPinEdgeToSuperviewEdge(ALEdge.Right)
             
+            /***** when I delete the constraints below, the layout come to display correctly *****/
             self.statusLabel.autoPinEdgeToSuperviewEdge(ALEdge.Left, withInset: 10)
             self.statusLabel.autoAlignAxisToSuperviewAxis(ALAxis.Horizontal)
             
@@ -241,6 +242,7 @@ class HelpHistoryCell: UITableViewCell {
             
             self.moneyLabel.autoPinEdge(ALEdge.Right, toEdge: ALEdge.Left, ofView: self.amountLabel, withOffset: -5)
             self.moneyLabel.autoAlignAxisToSuperviewAxis(ALAxis.Horizontal)
+            /********** end of the delete **********/
             
             self.didSetupConstraints = true
         }
